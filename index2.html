@@ -1,0 +1,402 @@
+urity
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+    <h3>Question 1</h3>
+    <p>
+        1. Write a JavaScript program to display the current day and time in the
+        following format. Sample Output : Today is : Tuesday. Current time is : 10
+        PM : 30 : 38
+    </p>
+    <h3>Answer</h3>
+    <h4 id="day">Today is :</h4>
+
+    <h3>Question 2</h3>
+    <p>
+        2. Write a JavaScript program to get the current date. Expected Output :
+        mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+    </p>
+    <h3>Answer</h3>
+    <h4 id="date"></h4>
+
+    <h3>Question 3</h3>
+    <p>
+        3. Write a JavaScript program to find the area of a triangle where lengths
+        of the three of its sides are 5, 6, 7
+    </p>
+    <h3>Answer</h3>
+    <h4 id="areaOfTri"></h4>
+
+    <h3>Question 4</h3>
+    <p>
+        Write a JavaScript program to rotate the string 'Saylani' in right
+        direction by periodically removing one letter from the end of the string
+        and attaching it to the front.
+    </p>
+    <h3>Answer</h3>
+    <h4 id="sylani"></h4>
+
+    <h3>Question 5</h3>
+    <p>
+        5. Write a JavaScript program to determine whether a given year is a leap
+        year in the Gregorian calendar.
+    </p>
+    <h3>Answer</h3>
+    <h4 id="sylani"></h4>
+
+    <input type="text" id="year" placeholder="Enter Year" />
+
+    <input type="button" id="button" onClick="isLeapYear()" value="Check Leap Year" />
+
+    <p id="leapYear"></p>
+
+
+    <h3>Question 6</h3>
+    <p>
+        6. Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.
+    </p>
+    <h3>Answer</h3>
+    <h4 id="ans6"></h4>
+
+    <h3>Question 7</h3>
+    <p>
+        7. Write a JavaScript program where the program takes a random Number between 1 to 10,
+        the user is then prompted to input a guess number. If the user input matches with guess number,
+        the program will display a message "Good Work" otherwise display a message "Not matched".
+    </p>
+    <h3>Answer</h3>
+    <input type="text" id="ans7" placeholder="Enter Number" />
+    <input type="button" id="ans7btn" onClick="isRandom()" value="Enter" />
+    <h3 id="seven"></h3>
+
+
+    <h3>Question 8</h3>
+    <p>
+        8. Write a JavaScript program to calculate days left until next 14 August.
+    </p>
+    <h3>Answer</h3>
+    <button  onclick="get14August()">Enter</button>
+    <h4 id="eight"></h4>
+
+
+
+
+    <h3>Question 9</h3>
+    <p>
+        9. Write a JavaScript program to calculate multiplication and division of two numbers.
+    </p>
+    <h3>Answer</h3>
+    <input type="text" id="ans9FirstNum" placeholder="Enter Number" />
+    <input type="text" id="ans9SecondNum" placeholder="Enter Number" />
+    <button  onclick="addition()">Add</button>
+    <button  onclick="multipication()">Multiply</button>
+    <h4 id="nine"></h4>
+
+
+    <h3>Question 10</h3>
+    <p>
+        10. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit. 
+[ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ]
+    </p>
+    <h3>Answer</h3>
+    <input type="text" id="ans10Inp" placeholder="Enter Temperature" />
+    <button  onclick="multipication()">Convert</button>
+    <h4 id="nine"></h4>
+
+    <!-- Q13 -->
+    <h3>Question 13</h3>
+    <p>
+        Write a JavaScript program to find the largest of three given Numbers.
+    </p>
+    <input type="text" id="num1" placeholder="enter number 1" />
+    <input type="text" id="num2" placeholder="enter number 2" />
+    <input type="text" id="num3" placeholder="enter number 3" />
+    <input type="button" id="button" onClick="largestNo()" value="Find largest of these" />
+    <h3>Answer</h3>
+    <h4 id="Q13"></h4>
+    <!-- Q13 -->
+
+    <!-- Q14 -->
+    <h3>Question 14</h3>
+    <p>
+        Write a JavaScript program to capitalize the first letter of each word of a given string.
+    </p>
+    <input type="text" id="Q14str" placeholder="enter string" />
+    <input type="button" id="button" onClick="capital_letter()" value="Find largest of these" />
+    <h3>Answer</h3>
+    <h4 id="Q14"></h4>
+    <!-- Q14 -->
+
+    <!-- Q15 -->
+    <h3>Question 15</h3>
+    <p>
+        Write a JavaScript program to convert a given days to hours and minutes.
+        i.e: 1 day equals 24hr
+    </p>
+    <input type="text" id="Q15input" placeholder="enter number" />
+    <input type="button" id="button" onClick="time_convert()" value="convert" />
+    <h3>Answer</h3>
+    <h4 id="Q15"></h4>
+    <!-- Q15 -->
+
+    <!-- Q16 -->
+    <h3>Question 16</h3>
+    <p>
+        Write a JavaScript program to reverse the elements of a given array, you can not use Array.reverse() do it with
+        loop.
+    </p>
+    <input type="button" id="button" onClick="reverseArray()" value="convert" />
+    <h3>Answer</h3>
+    <h4 id="Q16"></h4>
+    <!-- Q16 -->
+
+    <!-- Q17 -->
+    <h3>Question 17</h3>
+    <p>
+        Write a JavaScript program to find the larger value between the first or last
+        and set all the other elements with that value. Display the new array.
+    </p>
+    <input type="text" id="Q17num1" placeholder="enter number 1" />
+    <input type="text" id="Q17num2" placeholder="enter number 2" />
+    <input type="text" id="Q17num3" placeholder="enter number 3" />
+    <input type="button" id="button" onClick="all_max()" value="Dispaly array" />
+    <h3>Answer</h3>
+    <h4 id="Q17"></h4>
+    <!-- Q17 -->
+
+    <!-- Q18 -->
+    <h3>Question 18</h3>
+    <p>
+        Write a JavaScript program to find the larger value between the first or last
+        and set all the other elements with that value. Display the new array.
+    </p>
+    <input type="text" id="Q18array" placeholder="array in this format : 1,2,3,4" />
+    <input type="text" id="Q18k" placeholder="enter k" />
+    <input type="button" id="button" onClick="Kth_greatest_in_array()" value="Dispaly answer" />
+    <h3>Answer</h3>
+    <h4 id="Q18"></h4>
+    <!-- Q18 -->
+
+    <script>
+        const date = new Date();
+        const weekday = new Array(
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Suterday"
+        );
+        let days = weekday[date.getDay()];
+        document.getElementById("day").innerHTML = "Today is : " + days;
+        let day = date.getDate();
+        let month = date.getMonth() + 1;
+        let year = date.getFullYear();
+        let currentDate = month + "-" + day + "-" + year;
+        let currentDate1 = month + "/" + day + "/" + year;
+        let currentDate2 = day + "-" + month + "-" + year;
+        let currentDate3 = day + "/" + month + "/" + year;
+        document.getElementById("date").innerHTML =
+            currentDate +
+            "  ,  " +
+            currentDate1 +
+            "  ,  " +
+            currentDate2 +
+            "  ,  " +
+            currentDate3;
+
+        let a = 5,
+            b = 6,
+            c = 7;
+
+        let s = (a + b + c) / 2;
+
+        let area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+
+        document.getElementById("areaOfTri").innerHTML =
+            "Area of triangle is : " + area;
+
+        let sylani = "Sylani";
+        let reverseSylani = sylani.split("").reverse().join("");
+        document.getElementById("sylani").innerHTML =
+            "Reverse of Sylani is  : " + reverseSylani;
+
+        function isLeapYear() {
+            var year = document.getElementById("year").value;
+
+            document.getElementById("leapYear").innerHTML =
+                year % 100 === 0 ? "No it is not Leap Year" : "Yes It is Leap Year";
+        }
+
+
+
+        for (var ans6year = 2014; ans6year <= 2050; ans6year++) {
+            let firstJanDay = []
+            var ans6D = new Date(ans6year, 0, 1);
+            if (ans6D.getDay() === 0) {
+                document.getElementById("ans6").innerHTML =
+                    "1st January is being a Sunday  : " + ans6year;
+                console.log("1st January is being a Sunday  " + year);
+            }
+        }
+
+
+
+        //Q7
+
+
+        function isRandom() {
+            function getRandomInt(min, max) {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+                return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+            }
+            var randomNo = getRandomInt(1, 10)
+            var userInput = document.getElementById("ans7").value
+            if (randomNo === Number(userInput)) {
+                document.getElementById("seven").innerHTML =
+                    "Good Work";
+            } else {
+                document.getElementById("seven").innerHTML =
+                    "Not matched";
+            }
+        }
+
+//Q8
+
+function get14August(){
+    var res = "";
+    today=new Date();
+    console.log(today.getFullYear());
+    var aug14=new Date(today.getFullYear(), 7, 14);
+    if (today.getMonth() >7 && today.getDate()>14) 
+    {
+    aug14.setFullYear(aug14.getFullYear()+1); 
+    }  
+    var one_day=1000*60*60*24;
+    res = Math.ceil((aug14.getTime()-today.getTime())/(one_day))+" days left until 14 August!";
+    document.getElementById('eight').innerHTML = res;
+  }
+
+
+  //Q9
+  function addition() {
+       var a = Number(document.getElementById("ans9FirstNum").value)
+       var b = Number(document.getElementById("ans9SecondNum").value)
+       var c = a+b
+       document.getElementById("nine").innerHTML =
+                "Sum is " + c
+        }
+        function multipication() {
+       var a = Number(document.getElementById("ans9FirstNum").value)
+       var b = Number(document.getElementById("ans9SecondNum").value)
+       var c = a*b
+       document.getElementById("nine").innerHTML =
+                "Product is " + c
+        }
+
+        //Q13
+        function largestNo() {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var num3 = document.getElementById("num3").value;
+            const largest = Math.max(num1, num2, num3);
+
+            document.getElementById("Q13").innerHTML =
+                "largest no is : " + largest
+        }
+
+        //Q14
+        function capital_letter() {
+            var str = document.getElementById("Q14str").value;
+            str = str.split(" ");
+
+            for (var i = 0, x = str.length; i < x; i++) {
+                str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+            }
+
+            document.getElementById("Q14").innerHTML =
+                "lcapitalized string is : " + str.join(" ");
+        }
+
+        //15
+        function time_convert() {
+            var num = document.getElementById("Q15input").value;
+            var hours = Math.floor(num / 60);
+            var minutes = num % 60;
+            document.getElementById("Q15").innerHTML =
+                " converted answer is in hh:mm format : " + hours + ":" + minutes;
+        }
+        //16
+        function reverseArray() {
+            arr = [1, 2, 3, 4];
+            arr1 = [];
+            for (let i = arr.length - 1; i >= 0; i--) {
+                arr1.push(arr[i]);
+            }
+            document.getElementById("Q16").innerHTML =
+                "Reversed array of [1,2,3,4,] is : " + arr1;
+        }
+        //17
+        function all_max(nums) {
+            var num1 = document.getElementById("Q17num1").value;
+            var num2 = document.getElementById("Q17num2").value;
+            var num3 = document.getElementById("Q17num3").value;
+            nums = [num1, num2, num3]
+            var max_val = nums[0] > nums[2] ? nums[0] : nums[2];
+
+            nums[0] = max_val;
+            nums[1] = max_val;
+            nums[2] = max_val;
+
+            document.getElementById("Q17").innerHTML =
+                "new Array is : " + nums;
+        }
+        //18
+        function Kth_greatest_in_array() {
+            var value = document.getElementById("Q18array").value;
+            var k = document.getElementById("Q18k").value;
+            arr = [value]
+
+            for (var i = 0; i < k; i++) {
+                var max_index = i,
+                    tmp = arr[i];
+
+                for (var j = i + 1; j < arr.length; j++) {
+                    if (arr[j] > arr[max_index]) {
+                        max_index = j;
+                    }
+                }
+
+                arr[i] = arr[max_index];
+                arr[max_index] = tmp;
+            }
+            document.getElementById("Q18").innerHTML =
+                "new Array is : " + arr[k - 1];
+            //return arr[k - 1];
+        }
+
+    </script>
+</body>
+
+</html>
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
